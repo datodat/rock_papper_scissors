@@ -1,0 +1,91 @@
+:root {
+  --gradient-background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  --gradient-scissors: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --gradient-rock: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  --gradient-papper: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header: hsl(217, 16%, 45%);
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+
+  margin: auto;
+  background: var(--gradient-background);
+}
+
+.rules {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  background: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.rules-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  width: 400px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.rules-div div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rules-div div:nth-child(1) p {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark-text);
+}
+.rules-div div:nth-child(1) img {
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rules-div div:nth-child(2) {  
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules-div div:nth-child(2) img {
+  width: 250px;
+  height: 250px;
+}
