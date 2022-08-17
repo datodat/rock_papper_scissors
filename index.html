@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,37 +13,63 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
       <div class="header">
         <div class="header-left">
           <p>rock</p>
-          <p>papper</p>
+          <p>paper</p>
           <p>scissors</p>
         </div>
         <div class="header-right">
           <p>score</p>
-          <p>12</p>
+          <p id="score">0</p>
         </div>
       </div>
-      <div class="board">
+      <!-- Board -->
+      <div id="board" class="board">
         <div class="board-wrapper">
-          <img class="traingle" src="./images/bg-triangle.svg" />
-          <div class="icons-div rock-div">
+          <img class="triangle" src="./images/bg-triangle.svg" />
+          <div id="rock" class="icons-div rock-div">
             <div>
               <img src="./images/icon-rock.svg" />
             </div>
           </div>
-          <div class="icons-div papper-div">
+          <div id="paper" class="icons-div paper-div">
             <div>
               <img src="./images/icon-paper.svg" />
             </div>
           </div>
-          <div class="icons-div scissors-div">
+          <div id="scissors" class="icons-div scissors-div">
             <div>
               <img src="./images/icon-scissors.svg" />
             </div>
           </div>
         </div>
       </div>
+      <!-- Result -->
+      <div id="result" class="result">
+        <div>
+          <p>You Picked</p>
+          <div id="player-div" class="player-div">
+            <div>
+              <img id="player" src="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p id="result-p"></p>
+          <button id="play-again">Play Again</button>
+        </div>
+        <div>
+          <p>The House Picked</p>
+          <div id="computer-div" class="computer-div">
+            <div>
+              <img id="computer" src="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Rules -->
       <button id="rules-open" class="rules">rules</button>
       <div id="rules-div" class="rules-div">
         <div>
