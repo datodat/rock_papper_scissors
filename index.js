@@ -136,7 +136,7 @@ rulesOpen.addEventListener('click', () => {
   if(rulesOpened){
     rulesDiv.style.display = 'none';
     rulesOpened = false;
-    rulesOpen.innerText = 'open'
+    rulesOpen.innerText = 'rules'
   }else{
     rulesDiv.style.display = 'block';
     rulesOpened = true;
@@ -148,7 +148,7 @@ rulesClose.addEventListener('click', () => {
   if(rulesOpened){
     rulesDiv.style.display = 'none';
     rulesOpened = false;
-    rulesOpen.innerText = 'open'
+    rulesOpen.innerText = 'rules'
   }else{
     return;
   }
